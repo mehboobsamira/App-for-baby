@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-dancing: "Dancing Script", cursive;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-white overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 133, 162, 0.5), 0 0 20px rgba(255, 133, 162, 0.3);
+  }
+  .bg-glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(255, 133, 162, 0.2);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@200;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
